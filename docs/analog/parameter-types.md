@@ -1568,7 +1568,7 @@ hardware type - `24`
 
 | Size   | Type     | Field                                   |
 | ----   | -------- | --------------------------------------- |
-| `1`    | `uint8`  | parameter type = `52`                   |
+| `1`    | `uint8`  | parameter type = `53`                   |
 | `1-64` | `string` | [apn](#apn)                             |
 
 #### **apn**
@@ -1601,7 +1601,7 @@ hardware type - `24`
 
 | Size   | Type    | Field                                   |
 | ----   | ------- | --------------------------------------- |
-| `1`    | `uint8` | parameter type = `52`                   |
+| `1`    | `uint8` | parameter type = `54`                   |
 | `1`    | `uint8` | [enable](#enable)                         |
 
 #### **enable**
@@ -1619,5 +1619,5 @@ By default - false.
 | parameter type | `54`     | `0x36` |
 | enable         | `1`      | `0x01` |
 
-Message hex dump no LRC: `03 02 34 01 61`
+Message hex dump no LRC: `03 02 36 01 63`
 
