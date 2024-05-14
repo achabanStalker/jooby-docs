@@ -40,6 +40,8 @@ Command body structures for [SetParameter](./commands/SetParameter.md).
 * [Events config](#events-config)
 * [NBIOT module info](#NBIOT-module-info)
 * [NBIOT bands](#NBIOT-bands)
+* [NBIOT APN](#NBIOT-APN)
+* [NBIOT LED Indication](#NBIOT-LED-Indication)
 
 ## Reporting data interval
 
