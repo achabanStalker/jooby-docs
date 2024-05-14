@@ -1553,3 +1553,69 @@ Currently, preferred NB-IoT bands to be searched for. if set to 0 all bands that
 
 Message hex dump no LRC: `03 05 34 01 14`
 
+
+## NBIOT APN
+
+Parameter to get/set APN
+Available from software version = `1` for:<br>
+hardware type - `24`
+
+[Hardware types](./basics.md#hardware-types)
+
+### Format
+
+| Size   | Type     | Field                                   |
+| ----   | -------- | --------------------------------------- |
+| `1`    | `uint8`  | parameter type = `52`                   |
+| `1-64` | `string` | [apn](#apn)                             |
+
+#### **apn**
+Access Point Name - A logical name that is used to select the GGSN or the external packet data
+network. If the value is null or omitted, then the subscription value will be requested. By default null.
+
+### Examples
+
+#### config vodafone sim apn for NB-IoT - "nbiot" 
+
+| Field          | Value    | Hex            |
+| -------------- | -------- | -------------- |
+| command id     | `3`      | `0x03`         |
+| command size   | `5`      | `0x05`         |
+| parameter type | `53`     | `0x35`         |
+| apn            | `nbiot`  | `0x6e62696f74` |
+
+Message hex dump: `03 07 35 06 6e 62 69 6f 74 1c`
+
+
+## NBIOT LED Indication
+
+Parameter to set/get enable option for LED indication
+Available from software version = `1` for:<br>
+hardware type - `24`
+
+[Hardware types](./basics.md#hardware-types)
+
+### Format
+
+| Size   | Type    | Field                                   |
+| ----   | ------- | --------------------------------------- |
+| `1`    | `uint8` | parameter type = `52`                   |
+| `1`    | `uint8` | [enable](#enable)                         |
+
+#### **enable**
+option to enable or disable LED indication. Led indication significantly raises consumption. Use only for debugging purposes.
+By default - false.
+
+### Examples
+
+#### enable led indication
+
+| Field          | Value    | Hex    |
+| -------------- | -------- | ------ |
+| command id     | `3`      | `0x03` |
+| command size   | `5`      | `0x05` |
+| parameter type | `54`     | `0x36` |
+| enable         | `1`      | `0x01` |
+
+Message hex dump no LRC: `03 02 34 01 61`
+
