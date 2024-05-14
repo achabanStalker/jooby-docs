@@ -1582,7 +1582,7 @@ network. If the value is null or omitted, then the subscription value will be re
 | Field          | Value    | Hex            |
 | -------------- | -------- | -------------- |
 | command id     | `3`      | `0x03`         |
-| command size   | `5`      | `0x05`         |
+| command size   | `7`      | `0x07`         |
 | parameter type | `53`     | `0x35`         |
 | apn            | `nbiot`  | `0x6e62696f74` |
 
@@ -1615,7 +1615,7 @@ By default - false.
 | Field          | Value    | Hex    |
 | -------------- | -------- | ------ |
 | command id     | `3`      | `0x03` |
-| command size   | `5`      | `0x05` |
+| command size   | `2`      | `0x02` |
 | parameter type | `54`     | `0x36` |
 | enable         | `1`      | `0x01` |
 
